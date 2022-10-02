@@ -1,6 +1,8 @@
-# rustTut
+# Rust
+### > [Rust Book](https://doc.rust-lang.org/book/)
 
-### Rust Tools
+
+### >  Rust Tools
 
 - start by building a new rust project <code>cargo new <project_name></code>
 - <code>cargo check</code> quickly checks the rust code without compiling
