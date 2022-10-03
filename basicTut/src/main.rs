@@ -11,4 +11,24 @@ fn main() {
     // we are redefining the variable x
     let x = "hello";
     println!("the value of x is: {}", x);
+
+    //this is a constant
+    const MAX_POINTS: u32 = 100;
+    println!("the value of MAX_POINTS is: {}", MAX_POINTS);
+
+    /*  DATA TYPES
+    1. Scalar Types
+        - integers (i are signed and u are unsigned)
+            by default integers are i32 (ranging from i8 to i128)
+        - Floating-Point Types (f32 and f64)
+        - boolean (true or false)(0 or 1)
+        - characters (let Fname_initial: char = 'A';)
+    2. Compound Types
+        - Tuples
+    */
+    let tup: (i32,bool,char)=(1,true,'s');
+    println!("{}", tup.2);
+    /*
+        - Arrays (let a:[i32:5] = [1,2,3,4,5];)
+    */
 }
