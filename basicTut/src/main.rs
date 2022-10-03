@@ -1,3 +1,7 @@
+//std is a crate(package) and io is a module
+// :: ~ path separator in rust (goes from package to module/ module to function)
+use std::io;
+
 fn main() {
     // A simple example for a  
     // muttable variable in rust
@@ -31,4 +35,9 @@ fn main() {
     /*
         - Arrays (let a:[i32:5] = [1,2,3,4,5];)
     */
+
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    println!("You entered: {}", input);
 }
