@@ -36,8 +36,32 @@ fn main() {
         - Arrays (let a:[i32:5] = [1,2,3,4,5];)
     */
 
-
+    // ARITHMETIC AND TYPE CASTING
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
     println!("You entered: {}", input);
+
+    let int_input: i32 = input.trim().parse().unwrap();
+    println!("You entered: {} + 2 = {}",int_input, int_input + 2);
+
+    // CONDITIONS AND CONTROL FLOW
+    let cond = (2 as f32) <= 2.2;
+    println!("{}", cond);
+
+    let name = "john";
+    if name == "viraj" {
+        println!("Hello, {}!", name);
+    } else if name != "viraj" {
+        println!("Sorry no access to, {}!", name);
+    } else {
+        println!("Hello, World!");
+    }
+
+    // FUNCTIONS
+    println!("{}",test_func(69));
+}
+
+fn test_func(x: i32) -> i32 {
+    x + 1          //expression
+    // return x+1; //statement
 }
